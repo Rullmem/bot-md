@@ -33,23 +33,23 @@ module.exports = {
         global.namabot = conn.user.name
         global.packname = global.namabot
         global.author = global.data.owner
-        //global.author = 'The.sad.boy01'
+        //global.author = 'ArullOfc'
         global.wm2 = global.data.namabot + ' ' + global.data.owner
-        global.wm = namabot + ' ву 𝚃𝚑𝚎.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷'
-        global.colong1 = 'Ciss 📸'
+        global.wm = namabot + ' ву arullOfc'
+        global.colong1 = 'Cekrek 📸'
         global.colong2 = 'ʙy 𝚃𝚑𝚎.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷'
         global.kontak2 = [
-        ['62895336282144', '𝚃𝚑𝚎.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷', 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'drakblue3@gmail.com', true],
-        ['6282140373458', 'Raxcel-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true],
-        ['6285691387625', 'Evil-𝙱𝙾𝚃', 'Bot WhatsApp', 'Nothing!', true]
+        ['6285822347348', '𝚃𝚑𝚎.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷', 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'sahrulwara62@gmail.com', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true],
+        ['6285822347348', 'ArullBotzMD', 'Bot WhatsApp', 'Nothing!', true]
         ]
         global.bg = await (await fetch(img)).buffer()
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
@@ -105,8 +105,8 @@ module.exports = {
                     if (!('banned' in user)) user.banned = false
                     if (!isNumber(user.warn)) user.warn = 0
                     if (!isNumber(user.warning)) user.warning = 0
-                    if (!isNumber(user.lastIstigfar)) user.lastIstigfar = 0
-                    if (!isNumber(user.call)) user.call = 0  
+                    if (!isNumber(user.lastIstigfar)) user.lastIstigfar = 5
+                    if (!isNumber(user.call)) user.call = 1
 
                     if (!isNumber(user.afk)) user.afk = -1
                     if (!('afkReason' in user)) user.afkReason = ''
@@ -144,7 +144,7 @@ module.exports = {
                     if (!('premium' in user)) user.premium = false
                     if (!isNumber(user.premiumTime)) user.premiumTime = 0
                     if (!user.role) user.role = ''
-                    if (!('autolevelup' in user)) user.autolevelup = false
+                    if (!('autolevelup' in user)) user.autolevelup = true
                     if (!isNumber(user.pc)) user.pc = 0
                     //mancing
                     if (!isNumber(user.as)) user.as = 0
@@ -238,7 +238,7 @@ module.exports = {
                     lasthunt: 0,
                     lastweekly: 0,
                     lastmonthly: 0,
-                    registered: false,
+                    registered: true,
                     name: this.getName(m.sender),
                     email: '',
                     label: '',
@@ -248,7 +248,7 @@ module.exports = {
                     premium: false,
                     premiumTime: 0,
                     role: '',
-                    autolevelup: false,
+                    autolevelup: true,
                     pc: 0,
                     // Mancing cuk
                     as: 0,
@@ -298,11 +298,11 @@ module.exports = {
                     if (!isNumber(chat.expired)) chat.expired = 0
                     if (!('antiBadword' in chat)) chat.antiBadword = true
                     if (!('antispam' in chat)) chat.antispam = true
-                    if (!('antitroli' in chat)) chat.antitroli = false
-                    if (!('antivirtex' in chat)) chat.antivirtex = false
+                    if (!('antitroli' in chat)) chat.antitroli = true
+                    if (!('antivirtex' in chat)) chat.antivirtex = true
                     if (!('viewonce' in chat)) chat.viewonce = true
                     if (!('nsfw' in chat)) chat.nsfw = false
-                    if (!('simi' in chat)) chat.simi = false
+                    if (!('simi' in chat)) chat.simi = true
                     if (!('clear' in chat)) chat.clear = false
                     if (!isNumber(chat.cleartime)) chat.clearTime = 0 
                 } else global.db.data.chats[m.chat] = {
@@ -319,16 +319,16 @@ module.exports = {
                     desc: true,
                     descUpdate: true,
                     stiker: false,
-                    delete: false,
+                    delete: true,
                     antiLink: true,
                     expired: 0,
                     antiBadword: true,
                     antispam: true,
-                    antitroli: false,
-                    antivirtex: false,
+                    antitroli: true,
+                    antivirtex: true,
                     viewonce: true,
                     nsfw: false,
-                    simi: false,
+                    simi: true,
                     clear: false,
                     clearTime: 0
                 }
@@ -341,7 +341,7 @@ module.exports = {
                     if (!'anticall' in settings) settings.anticall = true
                     if (!'backup' in settings) settings.backup = false
                     if (!isNumber(settings.backupDB)) settings.backupDB = 0
-                    if (!'groupOnly' in settings) settings.groupOnly = false
+                    if (!'groupOnly' in settings) settings.groupOnly = true
                     if (!'jadibot' in settings) settings.jadibot = false
                     if (!isNumber(settings.status)) settings.status = 0
                     if (!'epe' in settings) settings.epe = true
@@ -353,7 +353,7 @@ module.exports = {
                     anticall: true,
                     backup: false,
                     backupDB: 0,
-                    groupOnly: false,
+                    groupOnly: true,
                     jadibot: false,
                     status: 0,
                     epe: true,
@@ -739,17 +739,17 @@ global.dfail = async (type, m, conn) => {
     let desl = deslink
     let gc = global.linkgc
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*Team Bot Discussion!1!1!*_',
-        owner: 'Perintah ini hanya dapat digunakan oleh _*Team Bot Discussion!1!1!*_',
+        rowner: '*Perintah ini Khusus ArullOfc*',
+        owner: '*Perintah ini Khusus ArullOfc*',
         mods: 'Perintah ini hanya dapat digunakan oleh *Moderator*',
         premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-        group: 'Perintah ini hanya dapat digunakan di grup!',
-        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-        admin: 'Perintah ini hanya untuk *Admin* grup!',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+        group: '*Perintah ini hanya dapat digunakan di grup!*',
+        private: '*Perintah ini hanya dapat digunakan di Chat Pribadi!*',
+        admin: '*Khusus Admin Cokk🗿*',
+        botAdmin: '*Bit Aja Bukan Admin Anj*',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        nsfw: 'NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini!',
-        rpg: 'RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini!',
+        nsfw: '*NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini!*',
+        rpg: '*RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini!*',
         restrict: 'Fitur ini di *disable*!'
     /*}[type]
     if (msg) return conn.reply(m.chat, msg, m, { mentions: conn.parseMention(msg) })*/
